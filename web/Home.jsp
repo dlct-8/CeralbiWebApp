@@ -9,7 +9,7 @@
 	<meta name="description" content="Ceralbi - La tienda en línea">
 	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Icon -->   
+	<!-- Icon -->
         <link href="Imgs/LogoAzul.ico"rel="shortcut icon"/>
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i"
@@ -24,7 +24,7 @@
 	<script src="https://kit.fontawesome.com/cfe8b23fc4.js" crossorigin="anonymous"></script>
         <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
         <link href="css/animate.css" rel="stylesheet" type="text/css"/>
-	
+
 </head>
 
     <body>
@@ -42,17 +42,17 @@
 			<!-- Left-aligned links (default) -->
 			<!-- logo -->
 			<div class="site-logo">
-                          
+
 				<img src="Imgs/LogoAzulWN.png" alt="Logo Ceralbi">
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
 				<i class="fa fa-bars"></i>
 			</a>
-			<a href="../AboutUs.html">Nosotros</a>
-			<a href="../Contact.html">Contacto</a>
+			<a href="AboutUs.html">Nosotros</a>
+			<a href="Contact.jsp">Contacto</a>
 			<a href="vistas/Help/CustomerServices.jsp" >Ayuda</a>
 			<a href="#"class="active">Inicio</a>
-                       
+
 		<!--	<a href="../Sales/Cajas/Cajas.html">Cajas</a>
 			<a href="../Sales/Cuadros/Cuadros.html">Cuadros</a>-->
 			<!--<div class="dropdown">
@@ -67,7 +67,7 @@
 
 			<!-- Right-aligned links -->
 			<div class="topnav-right">
-				<a href="../Customers/Login.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<a href="Customers/Login.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 				<div class="search-container">
     			<form action="/action_page.php">
       			<input type="text" placeholder="Buscar..." name="search">
@@ -85,12 +85,12 @@
 
 
 	<!-- Hero section -->
-        
+
 	<section class="hero-section set-bg" data-setbg="Imgs/bg.png">
 		<div class="hero-slider owl-carousel">
 			<div class="hs-item">
 				<div class="hs-left">
-                                   
+
 					<img src="Imgs/Products/Animales.png" alt="Cuadro Animales"></div>
 				<div class="hs-right">
 					<div class="hs-content">
@@ -332,8 +332,8 @@
 
 
 	<!-- Footer section -->
-        <%@include file="Template/Footer.jsp" %>
-        
+        <%@include file="Common/Footer.jsp" %>
+
 
 	<!--====== Javascripts & Jquery ======-->
         <script src="js/actions.js" type="text/javascript"></script>
@@ -344,7 +344,7 @@
         <script src="js/sly.min.js" type="text/javascript"></script>
         <script src="js/jquery.nicescroll.min.js" type="text/javascript"></script>
         <script src="js/main.js" type="text/javascript"></script>
-	
+
 
     </body>
 </html>

@@ -32,3 +32,17 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "45px";
   document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
 }
+
+// Administrator Sidepanel
+
+/* Set the width of the sidebar to 250px (show it) */
+function openPan() {
+  document.getElementById("mySidepanel").style.width = "160px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closePan() {
+  document.getElementById("mySidepanel").style.width = "45px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+}

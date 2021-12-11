@@ -28,7 +28,7 @@
                         <th class="text-center">VENDEDOR</th>
                         <th class="text-center">PEDIDO</th>
                         <th class="text-center">IMPUESTOS</th>
-                        
+
                         <th class="text-center">ACCIONES</th>
                     </tr>
                 </thead>
@@ -39,7 +39,7 @@
                     Factura fac=null;
                     while(iter.hasNext()){
                         fac=iter.next();
-                    
+
                 %>
                 <tbody>
                     <tr>
@@ -50,7 +50,7 @@
                         <td><%= fac.getIdVen()%></td>
                         <td><%= fac.getIdPed()%></td>
                         <td><%= fac.getImpuestos()%></td>
-                        
+
                         <td class="text-center">
                             <!-- Si quiere puede conservar id como llave para editar y eliminar-->
                             <a class="btn btn-primary" href="ControladorFactura?accion=editar&id=<%= fac.getIdfac()%>">Editar</a>

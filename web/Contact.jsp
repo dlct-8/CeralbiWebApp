@@ -1,5 +1,6 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="es">
 <head>
 	<title>Ceralbi - Tienda en línea</title>
 	<meta charset="UTF-8">
@@ -75,14 +76,35 @@
 
 	<!-- Page -->
 	<div class="page-area contact-page">
+
+		<div class="container">
+				<div class="col-lg-6">
+						<h1>Agregar Contacto</h1> <!--60- Cambiamos la acción-->
+						<!--61- Cambiamos el nombre del Controlador-->
+						<form action="ControladorContacto">
+							<!--62- Cambiamos los atributos-->
+								<!--63-Cambiamos en name= el atributo anteponiendo txt-->
+								Nombres: <br>
+								<input class="form-control" type="text" name="txtNombres"><br><!--Igual para todos los campos-->
+								Apellidos: <br>
+								<input class="form-control" type="text" name="txtApellidos"><br>
+								Asunto: <br>
+								<input class="form-control" type="text" name="txtAsunto"><br>
+								Mensaje: <br>
+								<input class="form-control" type="text" name="txtMensaje"><br>
+								<input class="btn btn-primary" type="submit" name="accion" value="Agregar">
+						</form>
+				</div>
+
+		</div>
 		<div class="container spad">
 			<div class="text-center">
 				<h4 class="contact-title">Contáctanos</h4>
 			</div>
-			<form class="row g-3 needs-validation" novalidate>
+			<form class="row g-3 needs-validation" novalidate action="ControladorContacto">
 					<div class="col-md-6">
 						<label for="validationCostum01" class="form-label"></label>
-						<input  type="text" style="background-color: #e0e3e4;" class="form-control"id="validationCostum01"  value="" placeholder="Nombre*" required>
+						<input  class="form-control" type="text" name="txtNombres" style="background-color: #e0e3e4;" id="validationCostum01"  value="" placeholder="Nombre*" required>
 						<div class="valid-feedback">
 	        	El nombre es correcto.
 	      	</div>
@@ -92,19 +114,19 @@
 					</div>
 					<div class="col-md-6">
 						<label for="validationServer02" class="form-label"></label>
-						<input type="text" style="background-color: #e0e3e4;" class="form-control" id="validationServer02" value="" placeholder="Apellido*"required>
+						<input type="text" style="background-color: #e0e3e4;" class="form-control" id="validationServer02" name="txtApellidos" value="" placeholder="Apellido*"required>
 						<div class="invalid-feedback">
       			El apellido es obligatorio.
     				</div>
 					</div>
 					<div class="col-md-12">
 						<label for="validationServer02" class="form-label"></label>
-						<input type="text" style="background-color: #e0e3e4;" class="form-control " id="validationServer02" value=""placeholder="Asunto*" required>
+						<input type="text" style="background-color: #e0e3e4;" class="form-control " id="validationServer02" name="txtAsunto" value=""placeholder="Asunto*" required>
 						<div class="invalid-feedback">
 						Este campo es requerido.
 						</div>
 							<label for="validationTextarea" class="form-label"></label>
-						<textarea style="background-color: #e0e3e4;" class="form-control" id="validationTextarea" value="" placeholder="Escriba su mensaje" required></textarea>
+						<textarea style="background-color: #e0e3e4;" class="form-control" id="validationTextarea" name="txtMensaje" value="" placeholder="Escriba su mensaje" required></textarea>
 						<div class="invalid-feedback">
 						Por favor deje su mensaje en esta area.
 						</div>
@@ -122,7 +144,8 @@
 					  </div>
 						<div  id="liveAlertPlaceholder"></div>
 						<div class="text-center">
-							<button class="site-btn" id="liveAlertBtn">Enviar Mensaje</button>
+							<button class="site-btn" id="liveAlertBtn" type="submit" name="accion">
+								Enviar Mensaje</button>
 						</div>
 					</div>
 
@@ -151,48 +174,7 @@
 
 
 	<!-- Footer section -->
-	<div class="footer-top">
-		<div class="row">
-			<div class="col-md-4 pr-md-5">
-				<img src="Imgs/LogoAzulW.png" class="footer-logo" alt="Logo Ceralbi">
-				<p class="light">Destacados como desarrolladores de software a la medida
-					de aplicaciones web y móviles para todas las industrias.</p>
-			</div>
-			<div class="col-md">
-				<ul class="list-unstyled nav-links">
-					<li><a href="Home.html">Inicio</a></li>
-					<li><a href="AboutUs.html">Nosotros</a></li>
-					<li><a href="Help/Help.html">Ayuda</a></li>
-					<li><a href="#">Contacto</a></li>
-				</ul>
-			</div>
-			<div class="col-md">
-				<ul class="list-unstyled nav-links">
-					<li><a href="Customers/Login.html">Mi Cuenta</a></li>
-					<li><a href="StoreAdmin/Admin.html">Administrador</a></li>
-					<li><a href="NavMap.html">Mapa de Navegación</a></li>
-					<li><a href="ErrorPages/Error404.html">Error 404</a></li>
-					<li><a href="ErrorPages/Error500.html">Error 500</a></li>
-				</ul>
-			</div>
-			<div class="col-md">
-			<!--	<ul class="list-unstyled nav-links">
-					<li><a href="#">Política de Privacidad</a></li>
-					<li><a href="#">Términos &amp; Condiciones</a></li>
-					<li><a href="#">Socios</a></li>
-				</ul>
-			</div>-->
-			<div class="col-md text-md-center">
-				<ul class="social">
-					<li><a href="https://www.instagram.com/encajascl/"><i class="fab fa-instagram-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
-					<li><a href="https://www.facebook.com/publi.print.524"><i class="fab fa-facebook-square"></i></a></li>
-					<li><a href="#"><i class="fab fa-pinterest-square"></i></a></li>
-				</ul>
-				<br><br><p class=""><a href="Contact.html" class="btn btn-footer">Contáctanos</a></p>
-			</div>
-		</div>
-	</div>
+	<%@include file="Common/Footer.jsp" %>
 
 	<!-- Footer section end -->
 
