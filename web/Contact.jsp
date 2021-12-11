@@ -92,7 +92,7 @@
 								<input class="form-control" type="text" name="txtAsunto"><br>
 								Mensaje: <br>
 								<input class="form-control" type="text" name="txtMensaje"><br>
-								<input class="btn btn-primary" type="submit" name="accion" value="Agregar">
+								<input class="add" type="submit" name="accion" value="Agregar">
 						</form>
 				</div>
 

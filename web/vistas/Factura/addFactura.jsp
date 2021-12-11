@@ -6,28 +6,65 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <title>JSP Page</title>
+      <title>Facturas</title>
+      <meta charset="UTF-8">
+      <meta name="description" content="Ceralbi - La tienda en línea">
+      <meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Icon -->
+      <link href="Imgs/LogoAzul.ico" rel="shortcut icon"/>
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet">
+
+      <script src="https://kit.fontawesome.com/cfe8b23fc4.js" crossorigin="anonymous"></script>
+
+      <!-- Stylesheets -->
+      <link rel="stylesheet" href="css/bootstrap.min.css"/>
+      <link rel="stylesheet" href="css/storeadmin.css"/>
+      <link rel="stylesheet" href="css/common.css"/>
+      <link rel="stylesheet" href="css/main.css"/>
     </head>
     <body>
-       
-       
-        <div class="container">
+      <!-- The sidebar -->
+      <div class="sidebar">
+       <img src="Imgs/LogoAzulW.png" alt="Logo Ceralbi">
+       <div class="adminClose">
+        <i class="fas fa-user-cog" style="font-size:35px"></i><br>
+        Administrador
+       </div>
+       <a href="AdminPanel.jsp"><i class="fas fa-tachometer-alt"></i>Dashboard</a>
+       <a href="ControladorCliente?accion=listar"><i class="fas fa-address-book"></i>Clientes</a>
+       <a href="ControladorProducto?accion=listar"><i class="fas fa-images"></i>Productos</a>
+       <a href="ControladorCategoria?accion=listar"><i class="fas fa-filter"></i>Categorías</a>
+       <a href="ControladorVenta?accion=listar"><i class="fas fa-chart-line"></i>Ventas</a>
+       <a class="active" href="ControladorFactura?accion=listar"><i class="fas fa-file-invoice-dollar"></i>Facturas</a>
+       <a href="#"><i class="fas fa-boxes"></i>Inventario</a>
+       <a href="#"><i class="fas fa-file-contract"></i>Reportes</a>
+       <a href="ControladorContacto?accion=listar"><i class="fas fa-comment-dots"></i>Contacto</a>
+       <div class="exit">
+         <a href="Home.jsp"><i class="fas fa-sign-out-alt"></i>Salir</a>
+       </div>
+      </div>
+
+        <div class="content">
         <div class="col-lg-6">
-        <h1>Agregar Factura</h1>
-        
-        <form action="ControladorFactura" method="get">   
+        <h2>Agregar Factura</h2>
+
+        <form action="ControladorFactura" method="get">
         <!-- Campos del Formulario -->
         Emisión:<br>
         <input class="form-control" type="date" name="txtEmision"><br>
         Vencimiento: <br>
-        <input class="form-control" type="date" name="txtVencimiento"><br>   
-       
+        <input class="form-control" type="date" name="txtVencimiento"><br>
+
         Cliente: <br>
         <select class="form-control" name="txtIdCli" id="txtIdCli"> <br>
-            
-            <%   
+
+            <%
             Conexion cn=new Conexion();
             Connection con;
             PreparedStatement ps;
@@ -43,15 +80,15 @@
         } catch (Exception e) {
         }
             %>
-        </select><br>  
-        
-        
+        </select><br>
+
+
         Vendedor: <br>
         <select class="form-control" name="txtIdVen" id="txtIdVen"> <br>
             <option value="999">Vendedores</option>
-           
-            <%   
-            
+
+            <%
+
             String sql2="select * from vendedor";
                 try {
             con=cn.getConnection();
@@ -63,14 +100,14 @@
         } catch (Exception e) {
         }
             %>
-        </select><br>  
-        
-       
+        </select><br>
+
+
         Pedido: <br>
         <select class="form-control" name="txtIdPed" id="txtIdPed"> <br>
-            
-            <%   
-            
+
+            <%
+
             String sql3="select * from pedido";
                 try {
             con=cn.getConnection();
@@ -82,18 +119,18 @@
         } catch (Exception e) {
         }
             %>
-        </select><br>  
-        
-  
+        </select><br>
+
+
         Impuestos: <br>
         <input class="form-control" type="number" step="0.01" name="txtImpuestos"><br>
-        
+
         <!-- Botón envio de datos -->
-        <input class="btn btn-primary" type="submit" name="accion" value="Agregar">
+        <input class="add" type="submit" name="accion" value="Agregar">
         <!-- Regredar a la vista show -->
-        <a href="ControladorFactura?accion=listar">Regresar</a>
+        <a class="add" href="ControladorFactura?accion=listar">Regresar</a>
         </form>
-        
+
         </div>
         </div>
     </body>
