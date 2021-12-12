@@ -14,14 +14,14 @@ import javax.servlet.http.HttpServletResponse;
 
 public class ControladorCliente extends HttpServlet {
 
-
+   
     String listar="vistas/Cliente/listarCliente.jsp";
     String add="vistas/Cliente/addCliente.jsp";
     String edit="vistas/Cliente/editCliente.jsp";
-
+    
     Cliente cl=new Cliente();
-
-    ClienteDAO dao=new ClienteDAO();
+    
+    ClienteDAO dao=new ClienteDAO(); 
     int id;
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -31,7 +31,7 @@ public class ControladorCliente extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet ControladorCliente</title>");
+            out.println("<title>Servlet ControladorCliente</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet ControladorCliente at " + request.getContextPath() + "</h1>");
@@ -47,63 +47,63 @@ public class ControladorCliente extends HttpServlet {
         String acceso="";
         String action=request.getParameter("accion");
         if(action.equalsIgnoreCase("listar")){
-            acceso=listar;
+            acceso=listar;            
         }else if(action.equalsIgnoreCase("add")){
             acceso=add;
         }
-        else if(action.equalsIgnoreCase("Agregar")){
-            String nom=request.getParameter("txtNombres");
+        else if(action.equalsIgnoreCase("Agregar")){ 
+            String nom=request.getParameter("txtNombres"); 
             String ape=request.getParameter("txtApellidos");
             int tip=Integer.parseInt(request.getParameter("txtIdTipo"));
             String ndo=request.getParameter("txtNumerodoc");
             String tel=request.getParameter("txtTelefono");
             String cor=request.getParameter("txtCorreo");
             String dir=request.getParameter("txtDireccion");
-
-
-            cl.setNombres(nom);
-            cl.setApellidos(ape);
+           
+            
+            cl.setNombres(nom); 
+            cl.setApellidos(ape); 
             cl.setIdTipo(tip);
-            cl.setNumerodoc(ndo);
+            cl.setNumerodoc(ndo); 
             cl.setTelefono(tel);
             cl.setCorreo(cor);
             cl.setDireccion(dir);
-
-
-            dao.add(cl);
+           
+            
+            dao.add(cl);     
             acceso=listar;
         }
         else if(action.equalsIgnoreCase("editar")){
             request.setAttribute("llave",request.getParameter("id")); // 46-Modificar 1er IdAtri viene de la vista
             acceso=edit;
         }
-        else if(action.equalsIgnoreCase("Actualizar")){
+        else if(action.equalsIgnoreCase("Actualizar")){ 
             id=Integer.parseInt(request.getParameter("txtid"));//No se modifica
-            String nom=request.getParameter("txtNombres");
+            String nom=request.getParameter("txtNombres"); 
             String ape=request.getParameter("txtApellidos");
             int tip=Integer.parseInt(request.getParameter("txtIdTipo"));
             String ndo=request.getParameter("txtNumerodoc");
             String tel=request.getParameter("txtTelefono");
             String cor=request.getParameter("txtCorreo");
             String dir=request.getParameter("txtDireccion");
-
-
-            cl.setIdCli(id);
-            cl.setNombres(nom);
-            cl.setApellidos(ape);
+            
+            
+            cl.setIdCli(id);  
+            cl.setNombres(nom); 
+            cl.setApellidos(ape); 
             cl.setIdTipo(tip);
-            cl.setNumerodoc(ndo);
+            cl.setNumerodoc(ndo); 
             cl.setTelefono(tel);
             cl.setCorreo(cor);
             cl.setDireccion(dir);
-
-
-            dao.edit(cl);
+            
+            
+            dao.edit(cl);  
             acceso=listar;
         }
         else if(action.equalsIgnoreCase("eliminar")){
             id=Integer.parseInt(request.getParameter("id"));
-            cl.setIdCli(id);
+            cl.setIdCli(id); 
             dao.eliminar(id);
             acceso=listar;
         }
@@ -117,7 +117,7 @@ public class ControladorCliente extends HttpServlet {
         processRequest(request, response);
     }
 
-
+   
     @Override
     public String getServletInfo() {
         return "Short description";

@@ -76,27 +76,6 @@
 
 	<!-- Page -->
 	<div class="page-area contact-page">
-
-		<div class="container">
-				<div class="col-lg-6">
-						<h1>Agregar Contacto</h1> <!--60- Cambiamos la acción-->
-						<!--61- Cambiamos el nombre del Controlador-->
-						<form action="ControladorContacto">
-							<!--62- Cambiamos los atributos-->
-								<!--63-Cambiamos en name= el atributo anteponiendo txt-->
-								Nombres: <br>
-								<input class="form-control" type="text" name="txtNombres"><br><!--Igual para todos los campos-->
-								Apellidos: <br>
-								<input class="form-control" type="text" name="txtApellidos"><br>
-								Asunto: <br>
-								<input class="form-control" type="text" name="txtAsunto"><br>
-								Mensaje: <br>
-								<input class="form-control" type="text" name="txtMensaje"><br>
-								<input class="add" type="submit" name="accion" value="Agregar">
-						</form>
-				</div>
-
-		</div>
 		<div class="container spad">
 			<div class="text-center">
 				<h4 class="contact-title">Contáctanos</h4>

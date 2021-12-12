@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <html lang="es">
 <head>
 	<title>Mi Cuenta</title>
@@ -7,7 +7,7 @@
 	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Icon -->
-	<link href="../Imgs/LogoAzul.ico" rel="shortcut icon"/>
+	<link href="Imgs/LogoAzul.ico" rel="shortcut icon"/>
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i"
@@ -16,13 +16,13 @@
   rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
 	<!-- Stylesheets -->
-	<link rel="stylesheet" href="../css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<script src="https://kit.fontawesome.com/cfe8b23fc4.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../css/common.css"/>
-	<link rel="stylesheet" href="../css/main.css"/>
-	<link rel="stylesheet" href="../css/login.css"/>
-	<link rel="stylesheet" href="../css/sidenav.css"/>
-	<link rel="stylesheet" href="../css/animate.css"/>
+	<link rel="stylesheet" href="css/common.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+	<link rel="stylesheet" href="css/login.css"/>
+	<link rel="stylesheet" href="css/sidenav.css"/>
+	<link rel="stylesheet" href="css/animate.css"/>
 </head>
 
 <header>
@@ -38,23 +38,23 @@
 			<!-- Left-aligned links (default) -->
 			<!-- logo -->
 			<div class="site-logo">
-				<img src="../Imgs/LogoAzulWN.png" alt="Logo Ceralbi">
+				<img src="Imgs/LogoAzulWN.png" alt="Logo Ceralbi">
 			</div>
 			<a href="javascript:void(0);" class="icon" onclick="hamburgerMenu()">
 				<i class="fa fa-bars"></i>
 			</a>
-			<a href="../AboutUs.html">Nosotros</a>
-			<a href="../Contact.html">Contacto</a>
-			<a href="../Help/CustomerServices.html">Ayuda</a>
-			<a href="../Home.html">Inicio</a>
-			<!--<a href="../Sales/Cajas/Cajas.html">Cajas</a>
+			<a href="AboutUs.html">Nosotros</a>
+			<a href="Contact.html">Contacto</a>
+			<a href="Help/CustomerServices.html">Ayuda</a>
+			<a href="Home.html">Inicio</a>
+			<!--<a href="Sales/Cajas/Cajas.html">Cajas</a>
 			<div class="dropdown">
 				<button class="dropbtn" onclick="dropdownMenu()">Cuadros
 					<i class="fa fa-caret-down"></i>
 				</button>
 				<div class="dropdown-content" id="myDropdown">
-					<a href="../Sales/Cuadros/Oficina/Oficina.html">Oficina</a>
-					<a href="../Sales/Cuadros/Hogar/Hogar.html">Hogar</a>
+					<a href="Sales/Cuadros/Oficina/Oficina.html">Oficina</a>
+					<a href="Sales/Cuadros/Hogar/Hogar.html">Hogar</a>
 				</div>
 			</div>-->
 
@@ -67,7 +67,7 @@
 						<button type="submit"><i class="fa fa-search"></i></button>
 					</form>
 				</div>
-				<a href="../Sales/Cart.html" class="card-bag"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a>
+				<a href="Sales/Cart.html" class="card-bag"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a>
 			</div>
 
 		</div>
@@ -101,14 +101,14 @@
 		<div id="orders" class="tabcontent">
 	 		<br><h3>Mis Compras</h3>
 			<br><div class="cardorder">
-				<img src="../Imgs/Products/Animales.png" alt="Avatar" class="cardorder">
+				<img src="Imgs/Products/Animales.png" alt="Avatar" class="cardorder">
 				<div class="container">
 					<h4><b>Cuadro Animales</b></h4>
 				 <p>$20.000 - 25/05/2020</p>
 			 </div>
 			</div>
 			<br><div class="cardorder">
-				<img src="../Imgs/Products/Animales2.png" alt="Avatar" class="cardorder">
+				<img src="Imgs/Products/Animales2.png" alt="Avatar" class="cardorder">
 				<div class="container">
 					<h4><b>Cuadro Animales</b></h4>
 				 <p>$20.000 - 20/05/2020</p>
@@ -166,13 +166,13 @@
 
 
 			<!--====== Javascripts & Jquery ======-->
-			<script src="../js/jquery-3.2.1.min.js"></script>
-			<script src="../js/sidenav.js"></script>
-			<script src="../js/bootstrap.min.js"></script>
-			<script src="../js/mixitup.min.js"></script>
-			<script src="../js/sly.min.js"></script>
-			<script src="../js/jquery.nicescroll.min.js"></script>
-			<script src="../js/main.js"></script>
-			<script src="../js/login.js"></script>
+			<script src="js/jquery-3.2.1.min.js"></script>
+			<script src="js/sidenav.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/mixitup.min.js"></script>
+			<script src="js/sly.min.js"></script>
+			<script src="js/jquery.nicescroll.min.js"></script>
+			<script src="js/main.js"></script>
+			<script src="js/login.js"></script>
 </body>
 </html>

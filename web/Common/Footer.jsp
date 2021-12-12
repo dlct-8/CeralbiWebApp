@@ -43,9 +43,9 @@
                <td class="col-md-3 ">
 
     			<ul class="list-unstyled nav-links">
-    				<li><a href="#">Inicio</a></li>
-    				<li><a href="../AboutUs.html">Nosotros</a></li>
-    				<li><a href="../Help/CustomerServices.html">Ayuda</a></li>
+    				<li><a href="Home.jsp">Inicio</a></li>
+    				<li><a href="AboutUs.html">Nosotros</a></li>
+    				<li><a href="vistas/Help/CustomerServices.jsp">Ayuda</a></li>
     				<li><a href="Contact.jsp">Contacto</a></li>
 
     			</ul>

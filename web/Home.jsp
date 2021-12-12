@@ -1,5 +1,3 @@
-
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -10,7 +8,7 @@
 	<meta name="keywords" content="ceralbi, Encajas, eCommerce, cuadros, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- Icon -->
-        <link href="Imgs/LogoAzul.ico"rel="shortcut icon"/>
+        <link href="Imgs/LogoAzul.ico" rel="shortcut icon"/>
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
@@ -53,28 +51,28 @@
 			<a href="vistas/Help/CustomerServices.jsp" >Ayuda</a>
 			<a href="#"class="active">Inicio</a>
 
-		<!--	<a href="../Sales/Cajas/Cajas.html">Cajas</a>
-			<a href="../Sales/Cuadros/Cuadros.html">Cuadros</a>-->
+		<!--	<a href="Sales/Cajas/Cajas.html">Cajas</a>
+			<a href="Sales/Cuadros/Cuadros.html">Cuadros</a>-->
 			<!--<div class="dropdown">
   			<button class="dropbtn" onclick="dropdownMenu()">Cuadros
     			<i class="fa fa-caret-down"></i>
 			  </button>
   			<div class="dropdown-content" id="myDropdown">
-    			<a href="../Sales/Cuadros/Oficina/Oficina.html">Oficina</a>
-  			  <a href="../Sales/Cuadros/Hogar/Hogar.html">Hogar</a>
+    			<a href="Sales/Cuadros/Oficina/Oficina.html">Oficina</a>
+  			  <a href="Sales/Cuadros/Hogar/Hogar.html">Hogar</a>
   			</div>
   		</div>-->
 
 			<!-- Right-aligned links -->
 			<div class="topnav-right">
-				<a href="Customers/Login.html">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+				<a href="login.jsp">Mi Cuenta <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
 				<div class="search-container">
     			<form action="/action_page.php">
       			<input type="text" placeholder="Buscar..." name="search">
     			  <button type="submit"><i class="fa fa-search"></i></button>
     			</form>
   			</div>
-				<a href="../Sales/Cart.html" class="card-bag"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a>
+				<a href="Sales/Cart.html" class="card-bag"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>2</span></a>
 			</div>
 
 		</div>
