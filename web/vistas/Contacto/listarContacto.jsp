@@ -44,7 +44,7 @@
        <a href="ControladorVenta?accion=listar"><i class="fas fa-chart-line"></i>Ventas</a>
        <a href="ControladorFactura?accion=listar"><i class="fas fa-file-invoice-dollar"></i>Facturas</a>
        <a href="#"><i class="fas fa-boxes"></i>Inventario</a>
-       <a href="#"><i class="fas fa-file-contract"></i>Reportes</a>
+       <a href="ReportesExcel.jsp"><i class="fas fa-file-contract"></i>Reportes</a>
        <a class="active" href="ControladorContacto?accion=listar"><i class="fas fa-comment-dots"></i>Contacto</a>
        <div class="exit">
          <a href="Home.jsp"><i class="fas fa-sign-out-alt"></i>Salir</a>

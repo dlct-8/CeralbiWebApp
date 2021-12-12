@@ -40,7 +40,7 @@ int r;
             if (r==1){
                 request.getSession().setAttribute("Usuario", Usuario);
             request.getSession().setAttribute("Clave", Clave);
-                request.getRequestDispatcher("mainmenu.jsp").forward(request, response);// si los datos son correctos r es 1 va a principal
+                request.getRequestDispatcher("AdminPanel.jsp").forward(request, response);// si los datos son correctos r es 1 va a principal
             }else{
                  request.getRequestDispatcher("login.jsp").forward(request, response);// si los datos son incorrectos r es diferente de 1 y entonces va a index 
             }
